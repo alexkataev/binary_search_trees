@@ -1,2 +1,2 @@
 # binary_search_trees
-Basic algorithms for Binary Search Trees (BST)
+Basic algorithms for Binary Search Trees (BST) on Python
