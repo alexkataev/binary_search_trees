@@ -32,12 +32,12 @@ def main():
     #                  8
     #                 /
     #                9
-    tree.insert(1, 2, 4)
-    tree.insert(2, right=3)
-    tree.insert(4, 5, 8)
-    tree.insert(8, right=9)
-    tree.insert(9, right=10)
-    tree.insert(10, left=11)
+    tree.insert(1, 2, 3)
+    tree.insert(2, right=4)
+    tree.insert(3, 5, 6)
+    tree.insert(6, right=7)
+    tree.insert(7, right=8)
+    tree.insert(8, left=9)
 
     # Below is the block of printing results of our algorithms:
     print(f'Preorder (N-L-R) (iterative): {_pre.preorder_iterative(tree.root)}')
