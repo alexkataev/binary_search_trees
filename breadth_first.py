@@ -1,4 +1,4 @@
-# Breadth-First Search (BFS) / Level order: Details: https://en.wikipedia.org/wiki/Breadth-first_search
+# Breadth-First Search (BFS) / Level order: https://en.wikipedia.org/wiki/Breadth-first_search
 def breadth_first_using_queue(root):
 
     if not root:
