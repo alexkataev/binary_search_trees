@@ -6,18 +6,18 @@ def top_view(root):
         return
 
     result_top_view = {root.data: 0}
-    stack = [root]
+    queue = [root]
 
-    while stack:
+    while queue:
 
-        node = stack.pop(0)
+        node = queue.pop(0)
 
         if node.left and node.left.data not in result_top_view.keys():
-            stack.append(node.left)
+            queue.append(node.left)
             result_top_view[node.left.data] = result_top_view[node.data] - 1
 
         if node.right and node.right.data not in result_top_view.keys():
-            stack.append(node.right)
+            queue.append(node.right)
             result_top_view[node.right.data] = result_top_view[node.data] + 1
 
     temp = []
